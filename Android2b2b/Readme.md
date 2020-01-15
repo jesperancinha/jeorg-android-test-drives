@@ -1,5 +1,4 @@
-# 2b2bAndroidTests
-Test drive for android
+# Android2b2b
 
 ## About me
 
