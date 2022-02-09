@@ -1,0 +1,10 @@
+pluginManagement {
+    repositories {
+        mavenLocal()
+        gradlePluginPortal()
+        mavenCentral()
+    }
+}
+
+rootProject.name = 'jeorg-android-test-drives'
+include ':jeorg-time-converter'
