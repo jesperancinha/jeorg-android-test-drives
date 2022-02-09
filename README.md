@@ -1,5 +1,37 @@
-# 2b2bAndroidTests
-Test drive for android
+# JEOrg Android test drives
+
+---
+
+
+---
+
+Test drives for android
+
+## Tech Stack
+
+---
+
+
+---
+
+## Buid
+
+```shell
+gradle wrapper --gradle-version 7.3.3
+```
+
+```shelll
+gradle wrapper
+
+./gradlew assembleRelease
+```
+
+
+## Buy me a coffee
+
+I hope you enjoyed this repository. If you did, you can optionally please buy me a coffee, which supports me in constantly improve and make new free content regularly for everyone. Thank you so much!
+
+[![Buy me a coffee](https://img.buymeacoffee.com/button-api/?text=Buy%20me%20a%20coffee&emoji=&slug=jesperancinha&button_colour=046c46&font_colour=ffffff&font_family=Cookie&outline_colour=ffffff&coffee_colour=FFDD00 "title")](https://www.buymeacoffee.com/jesperancinha)
 
 ## About me 👨🏽‍💻🚀🏳️‍🌈
 
