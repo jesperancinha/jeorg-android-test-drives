@@ -16,18 +16,22 @@ jobs:
       with:
         java-version: '11'
         distribution: 'adopt'
+        cache: gradle
 
-    - name: Setup Gradle
-      uses: gradle/gradle-build-action@v2
+    - name: Set up Android 30
+      uses: jesperancinhaorg/android-action@v0.0.1
 
-    - name: Build and Test API
-      run: cd string-paradigm-api && gradle wrapper && ./gradlew clean build && gradle assemble test publishToMavenLocal
+    - name: Creates properties
+      run: touch local.properties
 
-    - name: Build and Expression API
-      run: cd string-paradigm-expression-api && gradle wrapper && ./gradlew clean build && gradle assemble test publishToMavenLocal
+    - name: Grant execute permission for gradlew
+      run: chmod +x gradlew
 
-    - name: Build and Expression No Wrapper API
-      run: cd string-paradigm-expression-no-wrapper && gradle wrapper && ./gradlew clean build && gradle assemble test publishToMavenLocal
+    - name: Creates properties
+      run: touch local.properties
 
-    - name: Build Complete
-      run: gradle clean build test publishToMavenLocal && gradle dependencies
+    - name: Download Android dependencies
+      run: ./gradlew androidDependencies
+
+    - name: Gradle Lint Test
+      run: ./gradlew lint test

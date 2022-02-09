@@ -3,7 +3,7 @@ package org.jesperancinha.atd.time.converter;
 import android.app.Activity;
 import android.os.Bundle;
 
-public class Main2b2bActivity extends Activity {
+public class TimeConverterActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

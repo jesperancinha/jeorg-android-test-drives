@@ -1,8 +1,8 @@
 package org.jesperancinha.atd.time.converter;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 /**
  * To work on unit tests, switch the Test Artifact in the Build Variants view.
