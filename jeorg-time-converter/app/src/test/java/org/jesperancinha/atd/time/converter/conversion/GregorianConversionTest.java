@@ -1,19 +1,10 @@
-package com.steelzack.android2b2b.conversion;
+package org.jesperancinha.atd.time.converter.conversion;
 
-import org.joda.time.DateTime;
 import org.joda.time.format.DateTimeFormat;
 import org.joda.time.format.DateTimeFormatter;
-import org.joda.time.format.DateTimeParser;
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
 
 import java.util.Calendar;
 import java.util.GregorianCalendar;
-import java.util.Locale;
-
-import static org.hamcrest.core.IsEqual.equalTo;
-import static org.junit.Assert.*;
 
 /**
  * Created by jesperancinha on 12-5-16.
