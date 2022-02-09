@@ -2,7 +2,7 @@
 
 ---
 
-[![Generic badge](https://img.shields.io/static/v1.svg?label=GitHub&message=jeorg-android-test-drives&color=informational)](https://github.com/JEsperancinha/jeorg-android-test-drives)
+[![Generic badge](https://img.shields.io/static/v1.svg?label=GitHub&message=Android%20Test%20Drives&color=informational)](https://github.com/JEsperancinha/jeorg-android-test-drives)
 
 [![GitHub License](https://img.shields.io/badge/license-Apache%20License%202.0-blue.svg?style=flat)](https://www.apache.org/licenses/LICENSE-2.0)
 
