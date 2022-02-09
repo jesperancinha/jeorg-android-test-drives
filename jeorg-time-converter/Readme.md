@@ -1,4 +1,4 @@
-# jeorg-time-converter
+# app
 
 ## Buy me a coffee
 

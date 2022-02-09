@@ -1,45 +1,53 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
 buildscript {
     repositories {
         mavenLocal()
+        mavenCentral()
+        google()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:7.1.1'
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+        classpath('com.google.guava:guava') {
+            version {
+                strictly '28.1-jre'
+            }
+        }
     }
 }
 
 plugins {
-    id("java-gradle-plugin")
-    id("maven-publish")
-    id( "org.jesperancinha.plugins.omni") version "0.1.1"
+    id("org.jesperancinha.plugins.omni") version "0.1.1"
     id("jacoco")
 }
 
-group 'org.jesperancinha'
-version '0.0.0-SNAPSHOT'
-
-sourceCompatibility = JavaVersion.VERSION_11
-targetCompatibility = JavaVersion.VERSION_11
-
-wrapper {
-    gradleVersion = '8.0.0'
-}
-
-repositories {
-    mavenCentral()
-}
-
-test {
-    finalizedBy jacocoTestReport
-}
-
-subprojects {
-    apply plugin: "java"
+allprojects {
+    version = '0.0.0-SNAPSHOT'
     repositories {
+        mavenLocal()
         mavenCentral()
+        google()
     }
 }
 
-jacocoTestReport {
-    dependsOn test, subprojects.test
+jacoco {
+    toolVersion = "0.8.7"
+    reportsDir file("$buildDir/jacoco")
+}
+
+tasks.withType(Test) {
+    reports {
+        html.enabled false
+    }
+    useJUnitPlatform()
+    finalizedBy(jacocoTestReport)
+}
+
+task jacocoTestReport(type: JacocoReport, dependsOn: tasks.withType(Test)) {
     reports {
         xml.required = true
-        csv.required = true
+        csv.required = false
+        html.required = false
     }
 }
