@@ -32,7 +32,7 @@ Test drives for android
 ## Buid
 
 ```shell
-gradle wrapper --gradle-version 7.3.3
+gradle wrapper --gradle-version 7.4
 ```
 
 ```shelll
