@@ -40,7 +40,7 @@ jobs:
       run: ./gradlew clean build test jacocoTestReport -i
 
     - name: Send Reports
-      run: gradle -i
+      run: ./gradlew -i
       env:
          COVERALLS_REPO_TOKEN: ${{ secrets.COVERALLS_REPO_TOKEN }}
          CODACY_PROJECT_TOKEN: ${{ secrets.CODACY_PROJECT_TOKEN }}
