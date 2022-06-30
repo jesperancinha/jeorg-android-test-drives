@@ -25,7 +25,7 @@ jobs:
       run: curl -s "https://get.sdkman.io" | bash
 
     - name: Source SDKMAN
-      run: source "$HOME/.sdkman/bin/sdkman-init.sh"
+      run: source "$HOME/.sdkman/bin/sdkman-init.sh" && sdk version
 
     - name: Check SDKMAN
       run: sdk version
