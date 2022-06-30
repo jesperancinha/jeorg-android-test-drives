@@ -21,6 +21,15 @@ jobs:
     - name: Set up Android 30
       uses: jesperancinhaorg/android-action@v0.0.1
 
+    - name: Setup SDKMAN
+      run: curl -s "https://get.sdkman.io" | bash
+
+    - name: Source SDKMAN
+      run: source "$HOME/.sdkman/bin/sdkman-init.sh"
+
+    - name: Check SDKMAN
+      run: sdk version
+
     - name: Creates properties
       run: touch local.properties
 
