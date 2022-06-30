@@ -25,10 +25,10 @@ jobs:
       run: curl -s "https://get.sdkman.io" | bash
 
     - name: Source SDKMAN
-      run: source "$HOME/.sdkman/bin/sdkman-init.sh" && sdk version
+      run: source "$HOME/.sdkman/bin/sdkman-init.sh" && sdk install gradle && gradle -version
 
-    - name: Check SDKMAN
-      run: sdk version
+    - name: Check Gradle
+      run: gradle -version
 
     - name: Creates properties
       run: touch local.properties
