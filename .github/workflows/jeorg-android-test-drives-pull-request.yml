@@ -25,7 +25,7 @@ jobs:
       run: curl -s "https://get.sdkman.io" | bash
 
     - name: Source SDKMAN
-      run: source "$HOME/.sdkman/bin/sdkman-init.sh" && sdk install gradle && gradle -version
+      run: source "$HOME/.sdkman/bin/sdkman-init.sh" && sdk install gradle 7.5-rc-3 && gradle -version
 
     - name: Check Gradle
       run: gradle -version
