@@ -6,6 +6,6 @@ coverage:
 	./gradlew clean build test jacocoTestReport -i
 	gradle -i
 upgrade:
-	gradle wrapper --gradle-version 7.4
+	gradle wrapper --gradle-version 7.5
 upgrade-mac-os:
 	brew upgrade gradle
