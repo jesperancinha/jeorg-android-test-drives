@@ -3,13 +3,13 @@ apply plugin: 'maven-publish'
 apply plugin: 'jacoco'
 
 android {
-    compileSdkVersion 31
-    buildToolsVersion "32"
+    compileSdkVersion 33
+    buildToolsVersion "33"
 
     defaultConfig {
         applicationId "org.jesperancinha.atd.time.converter"
-        minSdkVersion 31
-        targetSdkVersion 31
+        minSdkVersion 33
+        targetSdkVersion 33
         versionCode 1
         versionName "1.0"
     }
@@ -45,6 +45,9 @@ repositories {
     google()
 }
 
+task wrapper(type: Wrapper){
+    gradleVersion = '7.5'
+}
 
 jacoco {
     toolVersion = "0.8.7"
