@@ -30,11 +30,11 @@ dependencies {
     testImplementation('org.assertj:assertj-core:3.23.1')
     androidTestImplementation 'org.junit.jupiter:junit-jupiter-engine:5.9.1'
     androidTestImplementation 'org.assertj:assertj-core:3.23.1'
-    androidTestImplementation 'androidx.test:runner:1.4.0'
+    androidTestImplementation 'androidx.test:runner:1.5.0'
     androidTestImplementation 'androidx.test.ext:junit:1.1.4'
     androidTestImplementation 'org.mockito:mockito-android:4.8.1'
     androidTestImplementation 'androidx.test.ext:junit:1.1.4'
-    androidTestImplementation 'androidx.test:runner:1.4.0'
+    androidTestImplementation 'androidx.test:runner:1.5.0'
     androidTestImplementation group: 'com.google.android', name: 'android-test', version: '4.1.1.4'
     androidTestUtil 'androidx.test:orchestrator:1.4.2'
 }
