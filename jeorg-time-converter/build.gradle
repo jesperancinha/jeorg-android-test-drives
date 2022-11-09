@@ -36,7 +36,7 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.4'
     androidTestImplementation 'androidx.test:runner:1.4.0'
     androidTestImplementation group: 'com.google.android', name: 'android-test', version: '4.1.1.4'
-    androidTestUtil 'androidx.test:orchestrator:1.4.1'
+    androidTestUtil 'androidx.test:orchestrator:1.4.2'
 }
 
 repositories {
