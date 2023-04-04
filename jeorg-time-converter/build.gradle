@@ -51,13 +51,9 @@ task wrapper(type: Wrapper){
 
 jacoco {
     toolVersion = "0.8.7"
-    reportsDir file("$buildDir/jacoco")
 }
 
 tasks.withType(Test) {
-    reports {
-        html.enabled false
-    }
     useJUnitPlatform()
     finalizedBy(jacocoTestReport)
 }
