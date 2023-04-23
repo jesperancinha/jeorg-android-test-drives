@@ -5,7 +5,7 @@ apply plugin: 'jacoco'
 android {
     compileSdkVersion 33
     buildToolsVersion "33"
-    namespace = "Gradle Sync issues"
+    namespace = "org.jesperancinha.atd.time.converter"
     defaultConfig {
         applicationId "org.jesperancinha.atd.time.converter"
         minSdkVersion 33
