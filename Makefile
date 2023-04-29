@@ -8,6 +8,9 @@ buildw:
 coverage:
 	./gradlew clean build test jacocoTestReport -i
 	gradle -i
+lint:
+	(yes "" 2>/dev/null || true) | sdkmanager --licenses
+	./gradlew lint test
 upgrade:
 	gradle wrapper --gradle-version $(GRADLE_VERSION)
 	cd jeorg-time-converter && gradle wrapper --gradle-version $(GRADLE_VERSION)
