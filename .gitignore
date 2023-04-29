@@ -33,3 +33,7 @@ captures/
 
 # Intellij
 **/.idea
+
+tools
+cmdline-tools
+sdk-tools-linux.zip

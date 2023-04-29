@@ -9,7 +9,9 @@ coverage:
 	./gradlew clean build test jacocoTestReport -i
 	gradle -i
 lint:
-	(yes "" 2>/dev/null || true) | sdkmanager --licenses
+	curl --output sdk-tools-linux.zip https://dl.google.com/android/repository/commandlinetools-linux-9477386_latest.zip
+	unzip -o sdk-tools-linux.zip
+	(yes "" 2>/dev/null || true) | ./cmdline-tools/bin/sdkmanager --licenses --sdk_root=$ANDROID_HOME
 	./gradlew lint test
 upgrade:
 	gradle wrapper --gradle-version $(GRADLE_VERSION)
