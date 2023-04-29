@@ -45,7 +45,7 @@ repositories {
 }
 
 task wrapper(type: Wrapper){
-    gradleVersion = '7.5'
+    gradleVersion = '8.0.2'
 }
 
 jacoco {

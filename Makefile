@@ -1,6 +1,7 @@
 SHELL := /bin/bash
 GRADLE_VERSION := 8.0.2
 
+b: buildw
 wrapper:
 	gradle wrapper
 buildw:
