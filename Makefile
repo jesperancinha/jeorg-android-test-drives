@@ -13,7 +13,7 @@ lint:
 	curl --output sdk-tools-linux.zip https://dl.google.com/android/repository/commandlinetools-linux-9477386_latest.zip
 	unzip -o sdk-tools-linux.zip
 	(yes "" 2>/dev/null || true) | ./cmdline-tools/bin/sdkmanager --licenses --sdk_root=$ANDROID_HOME
-	echo "y" | ./cmdline-tools/bin/sdkmanager "build-tools;34.0.0-rc3"
+	(yes "" 2>/dev/null || true) | ./cmdline-tools/bin/sdkmanager "build-tools;34.0.0-rc3" --sdk_root=$ANDROID_HOME
 	./gradlew lint test
 upgrade:
 	gradle wrapper --gradle-version $(GRADLE_VERSION)
