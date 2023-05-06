@@ -11,15 +11,15 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - name: Set up JDK 17
+    - name: Set up JDK 20
       uses: actions/setup-java@v3
       with:
-        java-version: '17'
+        java-version: '20'
         distribution: 'adopt'
         cache: gradle
 
     - name: Set up Android 30
-      uses: jesperancinhaorg/android-action@v0.0.1
+      uses: jesperancinhaorg/android-action@v0.0.2
 
     - name: Creates properties
       run: touch local.properties
