@@ -22,12 +22,9 @@
 
 Test drives for android
 
-## Tech Stack
+## Technologies used
 
----
-
-
----
+Please check the [TechStack.md](TechStack.md) file for details.
 
 ## Buid
 
