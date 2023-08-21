@@ -1,0 +1,102 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#36faf1"
+    tools:context="com.joai.ping2.Pinddg2Activity"
+    android:focusable="true">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+    <TextView
+        android:id="@+id/fullscreen_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:keepScreenOn="true"
+        android:textColor="#33b5e5"
+        android:textStyle="bold"
+        android:textSize="50sp"
+        android:gravity="center"
+        android:text="@string/dummy_content" />
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="false"
+        android:background="@drawable/ping2_back">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:weightSum="1"
+            android:paddingTop="50dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/please_insert_dns"
+                android:id="@+id/textView"
+                android:layout_gravity="center_horizontal|top"
+                android:textColor="#ffffff"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editDNS"
+                android:layout_gravity="center_horizontal"
+                android:inputType="text"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/calculate_AllIp"
+                android:textColor="#000000"
+                android:id="@+id/btnCalculate"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/btn_bkgrnd_def" />
+
+            <TextView
+                android:layout_width="247dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/txtResult"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="0.32"
+                android:password="false"
+                android:textColor="#ffffff"
+                android:paddingLeft="@dimen/padding_left_menus"
+                android:background="@drawable/shape" />
+
+            <TextView
+                android:layout_width="247dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/textComment"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="0.41"
+                android:paddingLeft="10dip"
+                android:textColor="#ffffff"
+                android:background="@drawable/shape" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/author_text"
+                android:id="@+id/textView2"
+                android:paddingRight="10dip"
+                android:textColor="#ffffff"
+                android:layout_gravity="right" />
+        </LinearLayout>
+
+    </FrameLayout>
+
+</FrameLayout>
