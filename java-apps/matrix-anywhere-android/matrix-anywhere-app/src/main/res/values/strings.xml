@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Matrix Anywhere</string>
+    <string name="dummy_button">Exit</string>
+    <string name="dummy_content">Exit</string>
+    <string name="title_activity_matrix">MatrixActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="submit">New Button</string>
+    <string name="return_text">Return</string>
+    <string name="number_of_rows">Number of Rows</string>
+    <string name="number_of_columns">Number of Columns</string>
+    <string name="calculate_text">Calculate</string>
+    <string name="result_will_appear_here">Result will appear here</string>
+    <string name="result">Result:</string>
+    <string name="welcome_message">Welcome to Matrix Anywhere</string>
+    <string name="matrix_calculation">Matrix determinant calculation</string>
+    <string name="submit_text">Submit</string>
+
+</resources>

@@ -1,0 +1,13 @@
+# Intellij
+.idea
+*.iml
+target
+build
+.DS_Store
+.gradle
+*.apk
+
+*.hprof
+
+# Android
+local.properties

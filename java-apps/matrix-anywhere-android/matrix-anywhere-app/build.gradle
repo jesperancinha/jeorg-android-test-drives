@@ -1,0 +1,59 @@
+apply plugin: 'com.android.application'
+apply plugin: 'jacoco'
+
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '8.0.0'
+}
+
+android {
+    namespace 'org.jesperancinha.matrixanywhere'
+
+    defaultConfig {
+        compileSdk 33
+        minSdkVersion 14
+        targetSdkVersion 33
+        versionCode 2
+        versionName "2.0"
+    }
+    buildTypes {
+        release {
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+tasks.withType(Test) {
+    useJUnitPlatform()
+    finalizedBy(jacocoTestReport)
+}
+
+task jacocoTestReport(type: JacocoReport, dependsOn: tasks.withType(Test)) {
+    reports {
+        xml.required = true
+        csv.required = false
+        html.required = false
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'org.jesperancinha.itf:itf-chartizate-api:5.0.1'
+    implementation 'com.android.support:multidex:1.0.3'
+    testImplementation 'org.junit.jupiter:junit-jupiter-engine:5.10.0'
+    testImplementation 'org.mockito:mockito-core:5.4.0'
+    androidTestImplementation 'org.junit.jupiter:junit-jupiter-engine:5.10.0'
+    androidTestImplementation 'org.assertj:assertj-core:3.24.2'
+    androidTestImplementation 'androidx.test:runner:1.5.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'org.mockito:mockito-android:5.4.0'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test:runner:1.5.2'
+    androidTestUtil 'androidx.test:orchestrator:1.4.2'
+}

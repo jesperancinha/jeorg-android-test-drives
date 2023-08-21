@@ -23,7 +23,7 @@ keytool -export -rfc -keystore ping2-joai-release-key.keystore -alias key_ping_j
 keytool -export -rfc -keystore ping2-joai-release-key.keystore -alias JEsperancinhaORG2 -file upload_certificate.pem
 ~/Android/Sdk/build-tools/34.0.0/apksigner rotate --out porfile --old-signer --ks pin2Keystore.jks --set-rollback true --new-signer --ks ping2-joai-release-key.keystore --set-rollback true --ks-key-alias JEsperancinhaORG2
 ~/Android/Sdk/build-tools/34.0.0/apksigner rotate --out porfile --old-signer --ks pin2Keystore.jks --set-rollback true --new-signer --ks ping2-joai-release-key.keystore --set-rollback true --ks-key-alias key_ping_joai
-``
+```
 
 >This step is only necessary when creating your own private key. Google can do that for you
 
