@@ -31,7 +31,7 @@ dependencies {
     androidTestImplementation 'org.assertj:assertj-core:3.24.2'
     androidTestImplementation 'androidx.test:runner:1.5.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
-    androidTestImplementation 'org.mockito:mockito-android:5.7.0'
+    androidTestImplementation 'org.mockito:mockito-android:5.8.0'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test:runner:1.5.2'
     androidTestImplementation group: 'com.google.android', name: 'android-test', version: '4.1.1.4'
