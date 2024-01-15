@@ -1,5 +1,5 @@
 SHELL := /bin/bash
-GRADLE_VERSION ?= 8.1.1
+GRADLE_VERSION ?= 8.5
 
 b: buildw
 buildw:
@@ -43,3 +43,7 @@ install-linux:
 	sudo apt-get install jq
 	sudo apt-get install curl
 	curl https://services.gradle.org/versions/current
+remove-virtual-box:
+	sudo dkms remove virtualbox/6.1.38 --all
+	sudo apt purge virtualbox
+	sudo dpkg -P virtualbox virtualbox-dkms
