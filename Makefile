@@ -1,5 +1,5 @@
 SHELL := /bin/bash
-GRADLE_VERSION := 8.5
+GRADLE_VERSION := 8.7
 
 b: buildw
 wrapper:
@@ -17,8 +17,8 @@ lint:
 	#(yes "" 2>/dev/null || true) | ./cmdline-tools/bin/sdkmanager "build-tools;34.0.0-rc3" --sdk_root=$ANDROID_HOME
 	./gradlew lint test
 upgrade:
-	gradle wrapper --gradle-version $(GRADLE_VERSION)
-	cd jeorg-time-converter && gradle wrapper --gradle-version $(GRADLE_VERSION)
+	gradle wrapper --gradle-version $(GRADLE_VERSION) --validate-url
+	cd jeorg-time-converter && gradle wrapper --gradle-version $(GRADLE_VERSION) --validate-url
 upgrade-mac-os:
 	brew upgrade gradle
 upgrade-gradle:
