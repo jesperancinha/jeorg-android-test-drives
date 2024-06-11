@@ -18,8 +18,8 @@ android {
 
     defaultConfig {
         applicationId 'org.joai.ping2'
-        compileSdk 33
-        minSdkVersion 31
+        compileSdk 34
+        minSdkVersion 34
         targetSdkVersion 34
         versionCode 212
         versionName '2.1.2'
