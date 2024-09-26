@@ -25,9 +25,9 @@ dependencies {
     implementation('androidx.appcompat:appcompat:1.6.1')
     implementation('joda-time:joda-time:2.13.0')
     testImplementation('org.junit.jupiter:junit-jupiter-api:5.11.1')
-    testImplementation('org.junit.jupiter:junit-jupiter-engine:5.11.0')
+    testImplementation('org.junit.jupiter:junit-jupiter-engine:5.11.1')
     testImplementation('org.assertj:assertj-core:3.26.3')
-    androidTestImplementation 'org.junit.jupiter:junit-jupiter-engine:5.11.0'
+    androidTestImplementation 'org.junit.jupiter:junit-jupiter-engine:5.11.1'
     androidTestImplementation 'org.assertj:assertj-core:3.26.3'
     androidTestImplementation 'androidx.test:runner:1.6.2'
     androidTestImplementation 'androidx.test.ext:junit:1.2.1'
