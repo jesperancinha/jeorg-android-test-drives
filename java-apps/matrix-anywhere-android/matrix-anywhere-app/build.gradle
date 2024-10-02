@@ -7,7 +7,7 @@ buildscript {
     }
 }
 
-task wrapper(type: Wrapper) {
+tasks.register('wrapper', Wrapper) {
     gradleVersion = '8.0.0'
 }
 
