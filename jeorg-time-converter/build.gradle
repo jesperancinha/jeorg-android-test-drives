@@ -38,12 +38,6 @@ dependencies {
     androidTestUtil 'androidx.test:orchestrator:1.5.1'
 }
 
-repositories {
-    mavenCentral()
-    maven { url "https://plugins.gradle.org/m2/" }
-    google()
-}
-
 jacoco {
     toolVersion = "0.8.7"
 }

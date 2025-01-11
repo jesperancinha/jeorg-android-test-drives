@@ -20,15 +20,12 @@ buildscript {
 plugins {
     id("org.jesperancinha.plugins.omni") version "0.3.1"
     id("jacoco")
+    id 'com.android.library' version '8.8.0' apply false
+    id 'org.jetbrains.kotlin.android' version '1.9.24' apply false
 }
 
 allprojects {
     version = '0.0.0-SNAPSHOT'
-    repositories {
-        mavenLocal()
-        mavenCentral()
-        google()
-    }
 }
 
 jacoco {

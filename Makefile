@@ -1,9 +1,6 @@
-SHELL := /bin/bash
-GRADLE_VERSION ?= 8.10.2
+include Makefile.mk
 
 b: buildw
-wrapper:
-	gradle wrapper
 buildw:
 	gradle clean build test publishToMavenLocal
 coverage:
