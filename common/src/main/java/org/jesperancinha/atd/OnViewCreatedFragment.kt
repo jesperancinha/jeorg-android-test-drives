@@ -15,11 +15,10 @@ class OnViewCreatedFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        // Lifecycle-aware flow collection
         lifecycleScope.launch {
-//            myFlow.collectWithLifecycle(viewLifecycleOwner.lifecycle, Lifecycle.State.STARTED) { value ->
-//                println("Collected: $value")
-//            }
+            myFlow.collectWithLifecycle(viewLifecycleOwner.lifecycle, Lifecycle.State.STARTED) { value ->
+                println("Collected: $value")
+            }
         }
     }
 }
