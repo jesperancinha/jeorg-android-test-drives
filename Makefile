@@ -2,6 +2,7 @@ include Makefile.mk
 
 b: buildw
 buildw:
+	gradle :wrapper; \
 	gradle clean build test publishToMavenLocal
 coverage:
 	./gradlew clean build test jacocoTestReport -i
@@ -15,7 +16,6 @@ lint:
 	./gradlew lint test
 upgrade:
 	gradle wrapper --gradle-version $(GRADLE_VERSION) --validate-url
-	cd jeorg-time-converter && gradle wrapper --gradle-version $(GRADLE_VERSION) --validate-url
 upgrade-mac-os:
 	brew upgrade gradle
 upgrade-gradle:
