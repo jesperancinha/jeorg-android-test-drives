@@ -36,5 +36,9 @@ jobs:
     - name: Gradle Lint Test
       run: make lint
 
+    - name: Lint Fail
+      if: failure()
+      run: cat timezone-app-utility-android/timezone-utility-app/build/reports/tests/testDebugUnitTest/index.html
+
     - name: Build
       run: ./gradlew clean build test jacocoTestReport -i
