@@ -8,8 +8,8 @@ coverage:
 	./gradlew clean build test jacocoTestReport -i
 	gradle -i
 lint:
-	curl --output sdk-tools-linux.zip https://dl.google.com/android/repository/commandlinetools-linux-9477386_latest.zip
-	unzip -o sdk-tools-linux.zip
+	#curl --output sdk-tools-linux.zip https://dl.google.com/android/repository/commandlinetools-linux-9477386_latest.zip
+	#unzip -o sdk-tools-linux.zip
 	# If this is necessary for a successful build, please close the PR and do not merge
 	#(yes "" 2>/dev/null || true) | ./cmdline-tools/bin/sdkmanager --licenses --sdk_root=$ANDROID_HOME
 	#(yes "" 2>/dev/null || true) | ./cmdline-tools/bin/sdkmanager "build-tools;34.0.0-rc3" --sdk_root=$ANDROID_HOME
