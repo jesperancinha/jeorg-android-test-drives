@@ -36,6 +36,10 @@ jobs:
     - name: Gradle Lint Test
       run: make lint
 
+    - name: Lint Fail
+      if: failure()
+      run: cat ~/runner/work/jeorg-android-test-drives/jeorg-android-test-drives/jeorg-time-converter/build/reports/tests/testDebugUnitTest/index.html
+
     - name: Build
       run: ./gradlew clean build test jacocoTestReport -i
 
