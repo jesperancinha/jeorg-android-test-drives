@@ -28,12 +28,19 @@ android {
     }
 }
 
-tasks.withType(Test) {
+tasks.withType(Test).configureEach {
     useJUnitPlatform()
     finalizedBy(jacocoTestReport)
 }
 
-task jacocoTestReport(type: JacocoReport, dependsOn: tasks.withType(Test)) {
+java {
+    toolchain {
+        languageVersion.set(JavaLanguageVersion.of(17))
+    }
+}
+
+tasks.register('jacocoTestReport', JacocoReport) {
+    dependsOn tasks.withType(Test)
     reports {
         xml.required = true
         csv.required = false
