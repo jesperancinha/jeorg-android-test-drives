@@ -38,7 +38,8 @@ jobs:
 
     - name: Lint Fail
       if: failure()
-      run: cat ~/work/jeorg-android-test-drives/jeorg-android-test-drives/jeorg-time-converter/build/reports/tests/testDebugUnitTest/index.html
+      run: cat ~/work/jeorg-android-test-drives/jeorg-android-test-drives/jeorg-time-converter/build/reports/tests/testDebugUnitTest/index.html &&
+            ls ~/work/jeorg-android-test-drives/jeorg-android-test-drives/jeorg-time-converter/build/reports/tests/testDebugUnitTest/classes/*.html -1 | xargs -I {} cat {}
 
     - name: Build
       run: ./gradlew clean build test jacocoTestReport -i
