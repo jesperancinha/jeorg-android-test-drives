@@ -2,7 +2,7 @@ include Makefile.mk
 
 b: buildw
 buildw:
-	gradle :wrapper; \
+	gradle :wrapper
 	gradle clean build test publishToMavenLocal
 coverage:
 	./gradlew clean build test jacocoTestReport -i
