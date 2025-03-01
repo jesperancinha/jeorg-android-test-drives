@@ -28,7 +28,7 @@ dependencies {
     testImplementation('org.junit.jupiter:junit-jupiter-api')
     testImplementation('org.junit.jupiter:junit-jupiter-engine')
     testImplementation('org.assertj:assertj-core:3.27.3')
-    androidTestImplementation(platform('org.junit:junit-bom:5.11.4'))
+    androidTestImplementation(platform('org.junit:junit-bom:5.12.0'))
     androidTestImplementation('org.junit.jupiter:junit-jupiter-api')
     androidTestImplementation 'org.junit.jupiter:junit-jupiter-engine'
     androidTestImplementation 'org.assertj:assertj-core:3.27.3'

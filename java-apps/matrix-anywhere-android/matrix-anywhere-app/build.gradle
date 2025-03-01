@@ -53,11 +53,11 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'org.jesperancinha.itf:itf-chartizate-api:5.0.1'
     implementation 'com.android.support:multidex:1.0.3'
-    testImplementation(platform('org.junit:junit-bom:5.11.4'))
+    testImplementation(platform('org.junit:junit-bom:5.12.0'))
     testImplementation('org.junit.jupiter:junit-jupiter-api')
     testImplementation 'org.junit.jupiter:junit-jupiter-engine'
     testImplementation 'org.mockito:mockito-core:5.4.0'
-    androidTestImplementation(platform('org.junit:junit-bom:5.11.4'))
+    androidTestImplementation(platform('org.junit:junit-bom:5.12.0'))
     androidTestImplementation('org.junit.jupiter:junit-jupiter-api')
     androidTestImplementation 'org.junit.jupiter:junit-jupiter-engine'
     androidTestImplementation 'org.assertj:assertj-core:3.24.2'
