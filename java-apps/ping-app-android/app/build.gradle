@@ -8,17 +8,13 @@ buildscript {
     }
 }
 
-repositories {
-    mavenCentral()
-}
-
 android {
 
     namespace 'com.joai.ping2'
 
     defaultConfig {
         applicationId 'org.joai.ping2'
-        compileSdk 34
+        compileSdkVersion 34
         minSdkVersion 34
         targetSdkVersion 34
         versionCode 212

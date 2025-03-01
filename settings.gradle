@@ -18,6 +18,6 @@ dependencyResolutionManagement {
 
 rootProject.name = 'jeorg-android-test-drives'
 include ':jeorg-time-converter'
-include ':java-apps:ping-app-android'
-include ':java-apps:matrix-anywhere-android'
+include ':java-apps:ping-app-android:app'
+include ':java-apps:matrix-anywhere-android:app'
 include ':common'
