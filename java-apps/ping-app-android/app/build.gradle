@@ -55,7 +55,7 @@ java {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.10.1'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.10.2'
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'org.jesperancinha.itf:itf-chartizate-api:5.0.1'
     implementation 'androidx.viewpager:viewpager:1.1.0'
