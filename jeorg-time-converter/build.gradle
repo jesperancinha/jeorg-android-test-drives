@@ -40,7 +40,7 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.3.0'
     androidTestImplementation 'androidx.test:runner:1.7.0'
     androidTestImplementation group: 'com.google.android', name: 'android-test', version: '4.1.1.4'
-    androidTestUtil 'androidx.test:orchestrator:1.5.1'
+    androidTestUtil 'androidx.test:orchestrator:1.6.0'
 }
 
 jacoco {
