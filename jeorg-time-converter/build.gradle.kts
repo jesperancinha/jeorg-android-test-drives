@@ -49,6 +49,12 @@ jacoco {
     toolVersion = "0.8.7"
 }
 
+java {
+    toolchain {
+        languageVersion.set(JavaLanguageVersion.of(17))
+    }
+}
+
 tasks.withType<Test>().configureEach {
     useJUnitPlatform()
     finalizedBy(tasks.named("jacocoTestReport"))

@@ -20,7 +20,5 @@ dependencyResolutionManagement {
 
 rootProject.name = "jeorg-android-test-drives"
 include(":jeorg-time-converter")
-include(":java-apps:ping-app-android:app")
-include(":kotlin-apps:jesprotech-research-app:app")
 include(":common")
 // ...existing code...
