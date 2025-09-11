@@ -1,32 +1,49 @@
 [versions]
 agp = "8.13.0"
 kotlin = "2.2.20"
-coreKtx = "1.17.0"
+coreKtx = "1.10.1"
+appcompat = "1.7.0"
+lifecycleRuntimeAndroid = "2.8.7"
+lifecycleRuntimeCompose = "2.6.0"
+lifecycleRuntimeKtx = "2.6.0"
+material = "1.10.0"
 junit = "4.13.2"
-junitVersion = "1.3.0"
-espressoCore = "3.7.0"
-lifecycleRuntimeKtx = "2.9.3"
-activityCompose = "1.11.0"
-composeBom = "2025.09.00"
+junitVersion = "1.2.1"
+junitBom = "5.13.4"
+junitJupiter = "5.13.4"
+junitPlatform = "1.13.4"
+espressoCore = "3.5.1"
+testrunner = "1.7.0"
+assertj = "3.27.4"
+jodaTime = "2.14.0"
+mockitoAndroid = "5.19.0"
+androidTest = "4.1.1.4"
+orchestrator = "1.6.1"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
-junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+androidx-lifecycle-runtime-android = { group = "androidx.lifecycle", name = "lifecycle-runtime-android", version.ref = "lifecycleRuntimeAndroid" }
+androidx-lifecycle-runtime-compose = { group = "androidx.lifecycle", name = "lifecycle-runtime-compose", version.ref = "lifecycleRuntimeCompose" }
+androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
 androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
 androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
-androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
-androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
-androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
-androidx-ui = { group = "androidx.compose.ui", name = "ui" }
-androidx-ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
-androidx-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
-androidx-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
-androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
-androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
-androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
+com-google-android-material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-test-runner = { group = "androidx.test", name = "runner", version.ref = "testrunner" }
+joda-time = { group = "joda-time", name = "joda-time", version.ref = "jodaTime" }
+assertj-core = { group = "org.assertj", name = "assertj-core", version.ref = "assertj" }
+mockito-android = { group = "org.mockito", name = "mockito-android", version.ref = "mockitoAndroid" }
+android-test = { group = "com.google.android", name = "android-test", version.ref = "androidTest" }
+orchestrator = { group = "androidx.test", name = "orchestrator", version.ref = "orchestrator" }
+junit-bom = { group = "org.junit", name = "junit-bom", version.ref = "junitBom" }
+junit-jupiter-api = { group = "org.junit.jupiter", name = "junit-jupiter-api", version.ref = "junitJupiter" }
+junit-jupiter-engine = { group = "org.junit.jupiter", name = "junit-jupiter-engine", version.ref = "junitJupiter" }
+junit-platform-engine = { group = "org.junit.platform", name = "junit-platform-engine", version.ref = "junitPlatform" }
+junit-platform-launcher = { group = "org.junit.platform", name = "junit-platform-launcher", version.ref = "junitPlatform" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
+android-library = { id = "com.android.library", version.ref = "agp" }
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
-kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
 org-jesperancinha-plugins-omni = { id = "org.jesperancinha.plugins.omni", version = "0.4.5" }
