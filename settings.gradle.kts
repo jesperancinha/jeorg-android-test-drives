@@ -1,0 +1,26 @@
+// ...existing code...
+pluginManagement {
+    repositories {
+        mavenLocal()
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+        maven(url = "https://jitpack.io")
+    }
+}
+
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven(url = "https://jitpack.io")
+    }
+}
+
+rootProject.name = "jeorg-android-test-drives"
+include(":jeorg-time-converter")
+include(":java-apps:ping-app-android:app")
+include(":kotlin-apps:jesprotech-research-app:app")
+include(":common")
+// ...existing code...
