@@ -23,6 +23,18 @@ allprojects {
     version = "0.0.0-SNAPSHOT"
 }
 
+subprojects {
+    configurations.all {
+        resolutionStrategy {
+            force(
+                "org.jetbrains.kotlin:kotlin-stdlib:${libs.versions.kotlin.get()}",
+                "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${libs.versions.kotlin.get()}",
+                "org.jetbrains.kotlin:kotlin-stdlib-jdk8:${libs.versions.kotlin.get()}"
+            )
+        }
+    }
+}
+
 jacoco {
     toolVersion = "0.8.7"
 }

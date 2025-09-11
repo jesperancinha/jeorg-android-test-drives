@@ -6,12 +6,12 @@ plugins {
 
 android {
     namespace = "nl.joaofilipesabinoesperancinha.jesprotech.research"
-    compileSdk = 35
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "nl.joaofilipesabinoesperancinha.jesprotech.research"
         minSdk = 24
-        targetSdk = 35
+        targetSdk = 36
         versionCode = 1
         versionName = "1.0"
 
