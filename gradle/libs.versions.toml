@@ -16,7 +16,7 @@ espressoCore = "3.7.0"
 testrunner = "1.7.0"
 assertj = "3.27.6"
 jodaTime = "2.14.0"
-mockitoAndroid = "5.20.0"
+mockitoAndroid = "5.21.0"
 androidTest = "4.1.1.4"
 orchestrator = "1.6.1"
 
